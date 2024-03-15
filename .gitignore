@@ -1,0 +1,7 @@
+/vendor/
+/node_modules/
+/coverage/
+/coverage.xml
+.phpcs-cache
+.phpunit.result.cache
+/build

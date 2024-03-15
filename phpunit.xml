@@ -1,0 +1,29 @@
+<phpunit
+    bootstrap="tests/bootstrap.php"
+    backupGlobals="false"
+    colors="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    beStrictAboutTestsThatDoNotTestAnything="true"
+    beStrictAboutOutputDuringTests="true"
+>
+    <testsuites>
+        <testsuite name="Tests">
+            <directory prefix="Test" suffix=".php">./tests</directory>
+        </testsuite>
+    </testsuites>
+    <coverage>
+        <include>
+            <directory suffix=".php">./</directory>
+        </include>
+        <exclude>
+            <directory prefix="Test" suffix=".php">./tests</directory>
+            <directory prefix="Test" suffix=".php">./vendor</directory>
+        </exclude>
+        <report>
+			<clover outputFile="coverage.xml" />
+			<html outputDirectory="coverage" />
+		</report>
+    </coverage>
+</phpunit>
