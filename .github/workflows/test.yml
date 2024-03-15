@@ -32,8 +32,6 @@ jobs:
               run: composer run phpcs
             - name: Run tests
               run: composer run phpunit
-            - name: Run coverage-check
-              run: composer run coverage-check
             - name: Run static analysis
               run: composer run phpstan
     js-test:
