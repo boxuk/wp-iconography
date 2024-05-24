@@ -12,19 +12,22 @@
 		"lint": "wp-scripts lint-js",
 		"lint:fix": "wp-scripts lint-js --fix",
 		"test": "wp-scripts test-unit-js",
+		"test:snapshots": "wp-scripts test-unit-js --updateSnapshot",
 		"packages-update": "wp-scripts packages-update",
-		"start": "wp-scripts start"
+		"start": "wp-scripts start",
+		"type-coverage": "type-coverage --strict --at-least 99.83"
 	},
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
 		"@jest/globals": "^29.7.0",
-		"@testing-library/react": "^15.0.5",
+		"@testing-library/react": "^14.2.1",
 		"@wordpress/dom-ready": "^3.52.0",
 		"@wordpress/editor": "^13.30.0",
 		"@wordpress/icons": "^9.44.0",
 		"@wordpress/interface": "^5.30.0",
 		"@wordpress/scripts": "^27.4.0",
-		"react": "^18.2.0"
+		"react": "^18.2.0",
+		"type-coverage": "^2.28.2"
 	}
 }

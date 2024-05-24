@@ -19,11 +19,11 @@ class Iconography {
 	 * 
 	 * @var array<string,string>
 	 */
-	protected array $scripts = [
-		'material-symbols-sharp' => 'https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200',
-		'material-symbols-rounded' => 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200',
+	protected array $scripts = array(
+		'material-symbols-sharp'    => 'https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200',
+		'material-symbols-rounded'  => 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200',
 		'material-symbols-outlined' => 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200',
-	];
+	);
 
 	/**
 	 * Page Content
@@ -38,10 +38,10 @@ class Iconography {
 	 * @return void
 	 */
 	public function init(): void {
-		add_action( 'wp_enqueue_scripts', [ $this, 'register_scripts' ] );
-		add_action( 'enqueue_block_assets', [ $this, 'register_scripts' ] );
-		add_action( 'enqueue_block_assets', [ $this, 'enqueue_all_iconography' ] );
-		add_action( 'wp_footer', [ $this, 'maybe_add_scripts' ], 1, 0 );
+		add_action( 'wp_enqueue_scripts', array( $this, 'register_scripts' ) );
+		add_action( 'enqueue_block_assets', array( $this, 'register_scripts' ) );
+		add_action( 'enqueue_block_assets', array( $this, 'enqueue_all_iconography' ) );
+		add_action( 'wp_footer', array( $this, 'maybe_add_scripts' ), 1, 0 );
 	}
 
 	/**

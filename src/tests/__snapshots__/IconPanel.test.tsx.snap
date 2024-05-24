@@ -30,7 +30,7 @@ exports[`IconPanel rendered IconPanel matches snapshot 1`] = `
     />
     <div>
       <div
-        class="components-flex css-xrii78-View-Flex-base-ItemsRow e19lxcc00"
+        class="components-flex css-16iv0az-PolymorphicDiv-Flex-base-ItemsRow e19lxcc00"
         data-wp-c16t="true"
         data-wp-component="Flex"
         style="margin-top: 2rem;"
@@ -64,7 +64,7 @@ exports[`IconPanel rendered IconPanel matches snapshot 1`] = `
   </body>,
   "container": <div>
     <div
-      class="components-flex css-xrii78-View-Flex-base-ItemsRow e19lxcc00"
+      class="components-flex css-16iv0az-PolymorphicDiv-Flex-base-ItemsRow e19lxcc00"
       data-wp-c16t="true"
       data-wp-component="Flex"
       style="margin-top: 2rem;"

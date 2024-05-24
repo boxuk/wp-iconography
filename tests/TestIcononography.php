@@ -8,6 +8,7 @@
 declare( strict_types = 1 );
 
 namespace Peake\Client\Mu\Plugins\Iconography;
+
 use WP_Mock\Tools\TestCase;
 
 require_once __DIR__ . '/../iconography.php';
@@ -24,10 +25,10 @@ class TestIcononography extends TestCase {
 	 */
 	public function testInit(): void {
 		$class_in_test = new Iconography();
-		\WP_Mock::expectActionAdded( 'wp_enqueue_scripts', [ $class_in_test, 'register_scripts' ] );
-		\WP_Mock::expectActionAdded( 'enqueue_block_assets', [ $class_in_test, 'register_scripts' ] );
-		\WP_Mock::expectActionAdded( 'enqueue_block_assets', [ $class_in_test, 'enqueue_all_iconography' ] );
-		\WP_Mock::expectActionAdded( 'wp_footer', [ $class_in_test, 'maybe_add_scripts' ], 1, 0 );
+		\WP_Mock::expectActionAdded( 'wp_enqueue_scripts', array( $class_in_test, 'register_scripts' ) );
+		\WP_Mock::expectActionAdded( 'enqueue_block_assets', array( $class_in_test, 'register_scripts' ) );
+		\WP_Mock::expectActionAdded( 'enqueue_block_assets', array( $class_in_test, 'enqueue_all_iconography' ) );
+		\WP_Mock::expectActionAdded( 'wp_footer', array( $class_in_test, 'maybe_add_scripts' ), 1, 0 );
 
 		$class_in_test->init();
 		$this->assertConditionsMet();
@@ -128,14 +129,14 @@ class TestIcononography extends TestCase {
 	 * @return array<string, array{0:string,1:string[]}>
 	 */
 	public function maybeAddScriptsProvider(): array {
-		return [ 
-			'empty' => [ '', [] ],
-			'no scripts' => [ '<p>hello world</p>', [] ],
-			'one script' => [ '<p>hello world</p><i class="material-symbols-sharp"></i>', [ 'material-symbols-sharp' ] ],
-			'two icons, one script' => [ '<p>hello world</p><i class="material-symbols-sharp"></i><i class="material-symbols-sharp"></i>', [ 'material-symbols-sharp' ] ],
-			'two icons, two scripts' => [ '<p>hello world</p><i class="material-symbols-sharp"></i><i class="material-symbols-rounded"></i>', [ 'material-symbols-sharp', 'material-symbols-rounded' ] ],
-			'three icons, two scripts' => [ '<p>hello world</p><i class="material-symbols-sharp"></i><i class="material-symbols-rounded"></i><i class="material-symbols-sharp"></i>', [ 'material-symbols-sharp', 'material-symbols-rounded' ] ],
-			'three icons, three scripts' => [ '<p>hello world</p><i class="material-symbols-sharp"></i><i class="material-symbols-rounded"></i><i class="material-symbols-outlined"></i>', [ 'material-symbols-sharp', 'material-symbols-rounded', 'material-symbols-outlined' ] ],
-		];
+		return array( 
+			'empty'                      => array( '', array() ),
+			'no scripts'                 => array( '<p>hello world</p>', array() ),
+			'one script'                 => array( '<p>hello world</p><i class="material-symbols-sharp"></i>', array( 'material-symbols-sharp' ) ),
+			'two icons, one script'      => array( '<p>hello world</p><i class="material-symbols-sharp"></i><i class="material-symbols-sharp"></i>', array( 'material-symbols-sharp' ) ),
+			'two icons, two scripts'     => array( '<p>hello world</p><i class="material-symbols-sharp"></i><i class="material-symbols-rounded"></i>', array( 'material-symbols-sharp', 'material-symbols-rounded' ) ),
+			'three icons, two scripts'   => array( '<p>hello world</p><i class="material-symbols-sharp"></i><i class="material-symbols-rounded"></i><i class="material-symbols-sharp"></i>', array( 'material-symbols-sharp', 'material-symbols-rounded' ) ),
+			'three icons, three scripts' => array( '<p>hello world</p><i class="material-symbols-sharp"></i><i class="material-symbols-rounded"></i><i class="material-symbols-outlined"></i>', array( 'material-symbols-sharp', 'material-symbols-rounded', 'material-symbols-outlined' ) ),
+		);
 	}
 }

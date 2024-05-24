@@ -2,18 +2,17 @@
 	"name": "boxuk/wp-iconography",
 	"description": "Adds Material Icons to the Block Editor",
 	"type": "wordpress-muplugin",
-	"scripts": {
-		"phpunit": "phpunit",
-		"phpstan": "phpstan analyse --memory-limit=1G",
-		"phpcs": "phpcs",
-		"phpcbf": "phpcbf",
-		"coverage-check": "coverage-check coverage.xml --require=100"
-	},
 	"require-dev": {
 		"10up/wp_mock": "^1.0",
 		"automattic/vipwpcs": "^3.0",
 		"szepeviktor/phpstan-wordpress": "^1.3"
 	},
+	"scripts": {
+        "phpunit": "phpunit",
+        "phpstan": "phpstan analyse --memory-limit=1G",
+        "phpcs": "phpcs",
+        "phpcbf": "phpcbf"
+    },
 	"authors": [
 		{
 			"name": "BoxUK",
