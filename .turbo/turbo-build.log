@@ -2,10 +2,15 @@
 > iconography@1.0.0 build
 > wp-scripts build
 
-asset [1m[32mindex.js[39m[22m 192 KiB [1m[32m[emitted][39m[22m [1m[32m[minimized][39m[22m (name: index)
-asset [1m[32mindex.asset.php[39m[22m 205 bytes [1m[32m[emitted][39m[22m (name: index)
-Entrypoint [1mindex[39m[22m 192 KiB = [1m[32mindex.js[39m[22m 192 KiB [1m[32mindex.asset.php[39m[22m 205 bytes
-orphan modules 197 KiB [1m[33m[orphan][39m[22m 13 modules
+asset index.js 192 KiB [emitted] [minimized] (name: index)
+asset index.asset.php 205 bytes [emitted] (name: index)
+Entrypoint index 192 KiB = index.js 192 KiB index.asset.php 205 bytes
+orphan modules 197 KiB [orphan] 13 modules
 runtime modules 663 bytes 3 modules
-[1m./src/index.ts + 13 modules[39m[22m 199 KiB [1m[31m[not cacheable][39m[22m [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
-webpack 5.91.0 compiled [1m[32msuccessfully[39m[22m in 1020 ms
+./src/index.ts + 13 modules 199 KiB [not cacheable] [built] [code generated]
+webpack 5.91.0 compiled successfully in 989 ms
+npm notice
+npm notice New minor version of npm available! 10.7.0 -> 10.8.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.8.1
+npm notice To update run: npm install -g npm@10.8.1
+npm notice
