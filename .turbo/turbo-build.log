@@ -2,10 +2,19 @@
 > iconography@1.0.0 build
 > wp-scripts build
 
-asset index.js 192 KiB [emitted] [minimized] (name: index)
-asset index.asset.php 205 bytes [emitted] (name: index)
-Entrypoint index 192 KiB = index.js 192 KiB index.asset.php 205 bytes
-orphan modules 197 KiB [orphan] 13 modules
-runtime modules 663 bytes 3 modules
-./src/index.ts + 13 modules 199 KiB [not cacheable] [built] [code generated]
-webpack 5.91.0 compiled successfully in 972 ms
+assets by path *.js 8.8 KiB
+  asset index.js 8.19 KiB [emitted] [minimized] (name: index)
+  asset 934.js 625 bytes [emitted] [minimized]
+asset block/block.json 1.33 KiB [emitted] [from: src/block/block.json] [copied]
+asset index.asset.php 208 bytes [emitted] (name: index)
+Entrypoint index 8.4 KiB = index.js 8.19 KiB index.asset.php 208 bytes
+orphan modules 8.47 KiB [orphan] 14 modules
+runtime modules 7.18 KiB 12 modules
+built modules 13.7 KiB [built]
+  modules by path ./src/ 13.7 KiB
+    ./src/index.tsx + 14 modules 10.8 KiB [not cacheable] [built] [code generated]
+    ./src/utils.ts 1.81 KiB [built] [code generated]
+    ./src/IconPanel.tsx 1.08 KiB [built] [code generated]
+  external "React" 42 bytes [built] [code generated]
+  external ["wp","components"] 42 bytes [built] [code generated]
+webpack 5.91.0 compiled successfully in 1480 ms
