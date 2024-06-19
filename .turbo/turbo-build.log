@@ -8,4 +8,4 @@ Entrypoint index 192 KiB = index.js 192 KiB index.asset.php 205 bytes
 orphan modules 197 KiB [orphan] 13 modules
 runtime modules 663 bytes 3 modules
 ./src/index.ts + 13 modules 199 KiB [not cacheable] [built] [code generated]
-webpack 5.91.0 compiled successfully in 993 ms
+webpack 5.91.0 compiled successfully in 972 ms
