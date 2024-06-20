@@ -17,4 +17,4 @@ built modules 13.7 KiB [built]
     ./src/IconPanel.tsx 1.08 KiB [built] [code generated]
   external "React" 42 bytes [built] [code generated]
   external ["wp","components"] 42 bytes [built] [code generated]
-webpack 5.91.0 compiled successfully in 1480 ms
+webpack 5.91.0 compiled successfully in 1158 ms
