@@ -28,4 +28,4 @@ built modules 21.3 KiB (javascript) 39 bytes (css/mini-extract) [built]
     ../../node_modules/react/cjs/react-jsx-runtime.production.min.js 859 bytes [built] [code generated]
   external "React" 42 bytes [built] [code generated]
   external ["wp","components"] 42 bytes [built] [code generated]
-webpack 5.91.0 compiled successfully in 2040 ms
+webpack 5.91.0 compiled successfully in 1751 ms
