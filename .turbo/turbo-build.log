@@ -25,4 +25,4 @@ built modules 20.2 KiB (javascript) 39 bytes (css/mini-extract) [built]
     ./src/index.ts + 11 modules 7.49 KiB [not cacheable] [built] [code generated]
   external "React" 42 bytes [built] [code generated]
   external ["wp","components"] 42 bytes [built] [code generated]
-webpack 5.91.0 compiled successfully in 2042 ms
+webpack 5.91.0 compiled successfully in 1862 ms
