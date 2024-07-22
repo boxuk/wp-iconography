@@ -2,32 +2,27 @@
 > iconography@1.0.0 build
 > wp-scripts build
 
-assets by path block/ 9.36 KiB
-  assets by chunk 7.79 KiB (name: block/index)
-    asset block/index.js 7.59 KiB [emitted] [minimized] (name: block/index)
+assets by path block/ 8.74 KiB
+  assets by chunk 7.22 KiB (name: block/index)
+    asset block/index.js 7.01 KiB [emitted] [minimized] (name: block/index)
     asset block/index.asset.php 209 bytes [emitted] (name: block/index)
-  assets by path block/*.css 80 bytes
-    asset block/style-index-rtl.css 40 bytes [emitted] (name: block/style-index) (id hint: style)
-    asset block/style-index.css 40 bytes [emitted] (name: block/style-index) (id hint: style)
   asset block/block.json 1.48 KiB [emitted] [from: src/block/block.json] [copied]
+  asset block/style-index.css 40 bytes [emitted] (name: block/style-index) (id hint: style)
 assets by chunk 4.65 KiB (name: index)
   asset index.js 4.47 KiB [emitted] [minimized] (name: index)
   asset index.asset.php 184 bytes [emitted] (name: index)
-Entrypoint block/index 7.87 KiB = block/style-index.css 40 bytes block/style-index-rtl.css 40 bytes block/index.js 7.59 KiB block/index.asset.php 209 bytes
+Entrypoint block/index 7.25 KiB = block/style-index.css 40 bytes block/index.js 7.01 KiB block/index.asset.php 209 bytes
 Entrypoint index 4.65 KiB = index.js 4.47 KiB index.asset.php 184 bytes
-orphan modules 207 KiB (javascript) 937 bytes (runtime) [orphan] 315 modules
+orphan modules 192 KiB (javascript) 937 bytes (runtime) [orphan] 304 modules
 runtime modules 4.24 KiB 10 modules
-built modules 21.3 KiB (javascript) 39 bytes (css/mini-extract) [built]
+built modules 20.2 KiB (javascript) 39 bytes (css/mini-extract) [built]
   modules by path ./src/ 20.1 KiB (javascript) 39 bytes (css/mini-extract)
     cacheable modules 2.9 KiB (javascript) 39 bytes (css/mini-extract)
       ./src/utils.ts 1.81 KiB [built] [code generated]
       ./src/shared/IconPanel.tsx 1.08 KiB [built] [code generated]
       css ../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/block/style.scss 39 bytes [built] [code generated]
-    ./src/block/index.ts + 16 modules 9.75 KiB [not cacheable] [built] [code generated]
+    ./src/block/index.ts + 16 modules 9.73 KiB [not cacheable] [built] [code generated]
     ./src/index.ts + 11 modules 7.49 KiB [not cacheable] [built] [code generated]
-  modules by path ../../node_modules/ 1.05 KiB
-    ../../node_modules/react/jsx-runtime.js 214 bytes [built] [code generated]
-    ../../node_modules/react/cjs/react-jsx-runtime.production.min.js 859 bytes [built] [code generated]
   external "React" 42 bytes [built] [code generated]
   external ["wp","components"] 42 bytes [built] [code generated]
-webpack 5.91.0 compiled successfully in 2093 ms
+webpack 5.91.0 compiled successfully in 1818 ms
