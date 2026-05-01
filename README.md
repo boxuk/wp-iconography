@@ -1,4 +1,4 @@
-# Box WordPress Iconography Support
+# Box UK WordPress Iconography Support
 
 Add the ability to add icons inline to your content in the WordPress block editor.
 
